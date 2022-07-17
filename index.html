@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="rating-state-card" id="rating-state-card">
+      <div class="star">
+        <img src="images/icon-star.svg" />
+      </div>
+      <h2>How did we do?</h2>
+      <h4>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </h4>
+      <div class="rating" id="rating">
+        <div class="number-conatiner">
+          <div class="number" id="btn1" onclick="getRating(event)">1</div>
+        </div>
+        <div class="number-conatiner">
+          <div class="number" id="btn2" onclick="getRating(event)">2</div>
+        </div>
+        <div class="number-conatiner">
+          <div class="number" id="btn3" onclick="getRating(event)">3</div>
+        </div>
+        <div class="number-conatiner">
+          <div class="number" id="btn4" onclick="getRating(event)">4</div>
+        </div>
+        <div class="number-conatiner">
+          <div class="number" id="btn5" onclick="getRating(event)">5</div>
+        </div>
+      </div>
+      <div class="submit-btn" id="submit-btn" onclick="thankYouMessage()">
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thank-card" id="thank-card" style="display: none">
+      <div class="illustration">
+        <img src="images/illustration-thank-you.svg" />
+      </div>
+      <div class="thank-text" id="thank-text"></div>
+      <h2>Thank You!</h2>
+      <h4 id="app-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </h4>
+    </div>
+
+    <!-- Thank you state end -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

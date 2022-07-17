@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.rating-state-card {
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 1rem;
+  width: 25%;
+  padding: 1rem;
+}
+
+.thank-card {
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 1rem;
+  width: 25%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+}
+
+h4 {
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+
+.number-conatiner {
+  min-width: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  margin-right: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.star {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  position: relative;
+}
+
+.star img {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+
+.number {
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+
+.number-conatiner:active {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.submit-btn button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  height: 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.submit-btn button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.illustration img {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.thank-text {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Overpass", sans-serif;
+  width: 50%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+#app-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .rating-state-card,
+  .thank-card {
+    width: 90%;
+    margin-left: 0 auto;
+  }
+}
